@@ -27,14 +27,14 @@ spring:
       max-wait-millis: 150
 
 eureka:
-  instance:
-    instanceId: ${spring.application.name}:${server.port}
-    prefer-ip-address: true
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka/
+      defaultZone: http://eureka6001.com:6001/eureka
+  instance:
+    instanceId: ${spring.application.name}:${server.port}
+    prefer-ip-address: true 
 
 ---
 server:
@@ -60,11 +60,11 @@ spring:
       max-wait-millis: 150
 
 eureka:
-  instance:
-    instanceId: ${spring.application.name}:${server.port}
-    prefer-ip-address: true
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka/
+      defaultZone: http://eureka6001.com:6001/eureka
+  instance:
+    instanceId: ${spring.application.name}:${server.port}
+    prefer-ip-address: true 
