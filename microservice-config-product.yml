@@ -28,8 +28,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka
   instance:
@@ -61,8 +61,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka
   instance:
